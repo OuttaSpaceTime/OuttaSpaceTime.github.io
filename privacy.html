@@ -4,71 +4,46 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · OuttaSpaceTime</title>
-<meta name="description" content="Privacy policy for OuttaSpaceTime's personal rclone Google OAuth client.">
 <style>
-  :root { --bg: #faf9f7; --fg: #1d1c1a; --muted: #6b6862; --accent: #3b6fd4; --line: #e6e3de; }
+  :root { --bg: #faf9f7; --fg: #1d1c1a; --muted: #6b6862; --accent: #3b6fd4; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #141413; --fg: #ecebe8; --muted: #9d9a93; --accent: #7ea6f5; --line: #2e2d2a; }
+    :root { --bg: #141413; --fg: #ecebe8; --muted: #9d9a93; --accent: #7ea6f5; }
   }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg);
-    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 64px 16px 48px; }
-  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.02em; }
-  h2 { font-size: 1.15rem; margin: 36px 0 8px; }
-  p, li { max-width: 68ch; }
-  .meta { color: var(--muted); margin: 0 0 32px; }
+  body { background: var(--bg); color: var(--fg); font-family: system-ui, sans-serif;
+    max-width: 680px; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; }
+  h1 { font-size: 1.6rem; }
+  em { color: var(--muted); }
   a { color: var(--accent); }
-  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line);
-    color: var(--muted); font-size: 0.85rem; }
 </style>
 </head>
 <body>
-<main>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: October 8, 2026</p>
+<h1>Privacy Policy</h1>
+<p><em>Last updated: 8 October 2026</em></p>
 
-  <p>This policy covers the Google OAuth client that OuttaSpaceTime uses with
-    <a href="https://rclone.org/">rclone</a> to access their own Google account (for example,
-    to sync and back up files in Google Drive). The app is for personal use by its owner only.
-    It is not offered to the public.</p>
+<p>This policy covers the personal Google OAuth client "rclone" in the OuttaSpaceTime project. Its only user is the owner of this site, who uses it with
+<a href="https://rclone.org">rclone</a> to access his own Google Drive.</p>
 
-  <h2>What data the app accesses</h2>
-  <p>When the owner authorizes the app, rclone receives an OAuth token from Google and uses it
-    to read, write and list the files that the granted scopes allow. That is the only Google
-    user data the app touches.</p>
+<h2>What data is accessed</h2>
+<p>The app asks for Google Drive access (scopes <code>drive</code>, <code>docs</code> and <code>drive.metadata.readonly</code>), so rclone can list, read, upload and change files in the user's own Drive.</p>
 
-  <h2>How the data is used</h2>
-  <p>Data moves only between Google's servers and the owner's own computer, to carry out the
-    file operations the owner runs. The OAuth token is stored locally in the rclone
-    configuration file on that computer.</p>
+<h2>How data is used and stored</h2>
+<ul>
+  <li>Data goes directly between Google's servers and rclone running on the user's own computer.</li>
+  <li>No data is sent to, collected by, or stored on any server run by this site.</li>
+  <li>OAuth tokens are kept only in the user's local rclone config file.</li>
+  <li>No data is sold, shared with third parties, or used for advertising.</li>
+</ul>
 
-  <h2>What is not done with the data</h2>
-  <ul>
-    <li>No data is collected, logged or stored on any server run by the developer.
-      There is no such server.</li>
-    <li>No data is sold, shared with or transferred to third parties.</li>
-    <li>No data is used for advertising, analytics or profiling, or to train AI or machine learning models.</li>
-  </ul>
+<p>The app's use of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
 
-  <h2>Google API Services User Data Policy</h2>
-  <p>The app's use of information received from Google APIs adheres to the
-    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
-    User Data Policy</a>, including the Limited Use requirements.</p>
+<h2>Revoking access</h2>
+<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 
-  <h2>Revoking access and deleting data</h2>
-  <p>Access can be revoked at any time on the
-    <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>.
-    Deleting the remote from the rclone configuration removes the stored token from the computer.</p>
+<h2>Contact</h2>
+<p><a href="mailto:escheyfelix@gmail.com">escheyfelix@gmail.com</a></p>
 
-  <h2>Changes</h2>
-  <p>If this policy changes, the updated version will be posted on this page with a new date.</p>
-
-  <h2>Contact</h2>
-  <p>For questions about this policy, contact
-    <a href="https://github.com/OuttaSpaceTime">OuttaSpaceTime on GitHub</a>.</p>
-
-  <footer><a href="./">← Back to projects</a></footer>
-</main>
+<p><a href="/">← Back to OuttaSpaceTime</a></p>
 </body>
 </html>
